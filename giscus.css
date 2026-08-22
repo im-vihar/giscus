@@ -82,7 +82,7 @@ main {
 
   --color-accent-fg: #ef4444;
   --color-accent-emphasis: #dc2626;
-  --color-accent-muted: rgb(220 38 38 / 40%);
+  --color-accent-muted: rgb(168 162 158 / 30%);
   --color-accent-subtle: rgb(220 38 38 / 15%);
 
   --color-success-fg: #3fb950;
@@ -108,4 +108,24 @@ main .pagination-loader-container {
 
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+}
+
+/*! keep red for buttons/reactions only — neutral focus borders */
+main .form-control:focus,
+main .form-select:focus,
+main .gsc-comment-box-write:focus-within {
+  border-color: rgb(255 255 255 / 20%);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 10%);
+}
+
+main a:focus-visible,
+main button:focus-visible,
+main [role="button"]:focus-visible,
+main input[type="radio"]:focus-visible,
+main input[type="checkbox"]:focus-visible {
+  outline-color: rgb(255 255 255 / 40%);
+}
+
+main .flash:not(.flash-error) {
+  background-color: rgb(168 162 158 / 8%);
 }
