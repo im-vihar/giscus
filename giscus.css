@@ -1,5 +1,3 @@
-/*! vihar.cc giscus theme — remapped from giscus dark theme (MIT License, GitHub Inc.) */
-
 main {
   font-family: 'Space Grotesk', system-ui, sans-serif;
   color-scheme: dark;
@@ -110,7 +108,6 @@ main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
 }
 
-/*! keep red for buttons/reactions only — neutral focus borders */
 main .form-control:focus,
 main .form-select:focus,
 main .gsc-comment-box-write:focus-within {
