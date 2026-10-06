@@ -1,7 +1,18 @@
+/* Instrument Sans has to be imported here, not just named. This stylesheet is
+   loaded inside the giscus iframe (giscus.app), which is a separate document
+   from vihar.cc — the Google Fonts <link> in base.njk does not cross that
+   origin boundary, so naming the family alone would silently fall back to
+   system-ui. @import must be the first rule in the file. */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
 main {
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: 'Instrument Sans', system-ui, sans-serif;
   color-scheme: dark;
   -webkit-font-smoothing: antialiased;
+  /* Square corners to match the host page: the frame's radius is set on the
+     <iframe> in vihar.cc's style.css, and this keeps the inner document from
+     reintroducing rounded corners of its own. */
+  border-radius: 0;
 
   --color-prettylights-syntax-comment: #57534e;
   --color-prettylights-syntax-constant: #e7e5e4;
